@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.littlezheng.activity_intent.SecondActivity">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="495dp"
+        android:text="欢迎来到第二个活动！"
+        android:paddingBottom="20dp" />
+
+    <Button
+        android:layout_width="407dp"
+        android:layout_height="45dp"
+        android:id="@+id/button2"
+        android:text="去第三个活动"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/finish2"
+        android:layout_marginTop="120dp"
+        android:text="结束当前活动"/>
+
+</android.support.constraint.ConstraintLayout>

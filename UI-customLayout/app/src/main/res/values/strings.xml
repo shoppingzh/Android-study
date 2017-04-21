@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">UI-customLayout</string>
+
+    <string name="notes">
+        3. 【重要】创建自定义控件（带事件处理）
+            3.1 情景：有时候，系统提供的控件不够用，或者希望将基本的控件进行组合形成一个组合控件（复杂控件），以后使用该控件时只需引入即可，而不需每次都重新
+                定义。例如iPhone手机中的标题栏
+            3.2 创建自定义控件并为控件注册事件的步骤：
+                1）新建布局文件，在该文件中编写自定义控件的样式
+                2）新建自定义布局类继承自Android自带的布局类型（如LinearLayout），并覆写其任一构造函数，在该构造函数中加载1）中定义的布局信息：
+                    LayoutInflater.from(context).inflate(R.layout.custom_title,this);
+                3）在其他布局文件中使用该布局，使用方法是通过自定义布局类的全类名引入该布局：
+                    &lt;com.littlezheng.ui_custormlayout.layout.TitleLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/&gt;
+                4）自定义控件是可以为自定义布局中的基础控件添加事件的，在自定义布局类构造函数中注册即可：
+                    Button backBtn = (Button) findViewById(R.id.title_back);
+                    backBtn.setOnClickListener(new OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            //Toast.makeText(getContext(),"按下了返回键",Toast.LENGTH_SHORT).show();
+                            ((Activity)context).finish();
+                        }
+                    });
+    </string>
+</resources>
