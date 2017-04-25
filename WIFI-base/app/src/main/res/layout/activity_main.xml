@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_scan_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="扫描网络并获取结果"/>
+
+    <Button
+        android:id="@+id/btn_show_curr_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看当前连接信息"/>
+
+    <TextView
+        android:id="@+id/text_curr_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
