@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/btn_notify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="基础通知"/>
+
+    <Button
+        android:id="@+id/btn_send_broadcast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送广播的通知"/>
+
+    <Button
+        android:id="@+id/btn_sound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="带有音效的通知"/>
+
+    <Button
+        android:id="@+id/btn_vibrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="可振动的通知"/>
+
+    <Button
+        android:id="@+id/btn_lights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="带呼吸灯的通知"/>
+
+    <Button
+        android:id="@+id/btn_above"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上方展示的通知"/>
+
+
+</LinearLayout>
